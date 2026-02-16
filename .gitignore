@@ -1,0 +1,37 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# ── Large data files (download separately — see README) ──
+# Medicaid spending parquet (2.7GB)
+medicaid-provider-spending/data/medicaid-provider-spending.parquet
+# NPPES full download ZIP (1GB) and HCPCS ZIP
+medicaid-provider-spending/data/NPPES_Data_Dissemination_*.zip
+medicaid-provider-spending/data/hcpc2026_jan_anweb_01122026.zip
+# Raw NPI CSVs (10GB+) and derived parquets
+data/npidata_pfile_*.csv
+data/endpoint_pfile_*.csv
+data/othername_pfile_*.csv
+data/pl_pfile_*.csv
+data/*_fileheader.csv
+data/npi_slim.parquet
+data/npi_address.parquet
+data/*.pdf
+# Raw HCPCS source files (from CMS ZIP)
+data/hcpcs/
+# OIG LEIE exclusion list (15MB, download from OIG website)
+medicaid-provider-spending/data/UPDATED.csv
+
+# ── Output (reproducible from scripts + data) ──
+output/

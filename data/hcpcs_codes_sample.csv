@@ -1,0 +1,23 @@
+CODE,SHORT_DESCRIPTION,LONG_DESCRIPTION,CATEGORY
+T1019,Personal Care Services,Personal care services per 15 minutes,Home Health
+T1015,Clinic Visit,Clinic visit/encounter all-inclusive,Clinic Services
+T2016,Habilitation Services,Habilitation training hourly per diem,Behavioral Health
+99213,Office Visit,Office/outpatient visit est patient 20-29 min,Office Visits
+S5125,Attendant Care,Attendant care services per hour,Home Health
+S9123,Nursing Care,Nursing care in the home by RN per hour,Home Health
+99214,Office Visit,Office/outpatient visit est patient 30-39 min,Office Visits
+H2015,Comprehensive Community Support,Comprehensive community support services per diem,Behavioral Health
+H0015,Alcohol/Drug Services,Alcohol and/or drug services intensive outpatient,Behavioral Health
+H2017,Psychosocial Rehabilitation,Psychosocial rehabilitation services per 15 minutes,Behavioral Health
+T1017,Targeted Case Management,Targeted case management per month,Case Management
+T1020,Personal Care Services,Personal care services per diem,Home Health
+90999,Unlisted Immunization,Unlisted vaccine/toxoid,Immunizations
+A0427,Ambulance Service,Ambulance service ALS emergency transport level 1,Transportation
+99232,Hospital Visit,Subsequent hospital care per day 25 min,Hospital Services
+J2326,Injection Nusinersen,Injection nusinersen 0.1 mg,Drugs/Biologicals
+A4657,Syringe,Syringe with needle for external insulin pump,Supplies
+S9124,Nurse Aide,Nursing care in the home by LPN per hour,Home Health
+8888888,Unknown/Invalid,Unknown or invalid procedure code,Unknown
+S5100,Day Habilitation,Day habilitation per hour,Behavioral Health
+99509,Home Visit,Home visit for assistance with ADLs,Home Health
+T2041,Respite Care,Respite care services per diem,Home Health

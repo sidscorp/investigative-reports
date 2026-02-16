@@ -1,0 +1,7 @@
+polars>=1.38
+numpy>=2.0
+pyarrow>=23.0
+requests>=2.32
+streamlit>=1.54
+plotly>=6.5
+pandas>=2.3
