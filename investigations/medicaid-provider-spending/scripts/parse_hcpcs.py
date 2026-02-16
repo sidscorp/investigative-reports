@@ -64,7 +64,8 @@ def parse_hcpcs(input_path: str, output_path: str):
 
 
 if __name__ == "__main__":
-    input_file = "data/hcpcs/HCPC2026_JAN_ANWEB_01122026.txt"
-    output_file = "data/hcpcs_codes.csv"
+    data_dir = Path(__file__).resolve().parent.parent / "data"
+    input_file = str(data_dir / "hcpcs" / "HCPC2026_JAN_ANWEB_01122026.txt")
+    output_file = str(data_dir / "hcpcs_codes.csv")
 
     parse_hcpcs(input_file, output_file)

@@ -13,25 +13,25 @@ __pycache__/
 .vscode/
 *.swp
 
-# ── Large data files (download separately — see README) ──
-# Medicaid spending parquet (2.7GB)
-medicaid-provider-spending/data/medicaid-provider-spending.parquet
+# ── Medicaid Provider Spending investigation — large data files ──
+# Primary dataset (2.7GB)
+investigations/medicaid-provider-spending/data/medicaid-provider-spending.parquet
 # NPPES full download ZIP (1GB) and HCPCS ZIP
-medicaid-provider-spending/data/NPPES_Data_Dissemination_*.zip
-medicaid-provider-spending/data/hcpc2026_jan_anweb_01122026.zip
+investigations/medicaid-provider-spending/data/NPPES_Data_Dissemination_*.zip
+investigations/medicaid-provider-spending/data/hcpc2026_jan_anweb_01122026.zip
 # Raw NPI CSVs (10GB+) and derived parquets
-data/npidata_pfile_*.csv
-data/endpoint_pfile_*.csv
-data/othername_pfile_*.csv
-data/pl_pfile_*.csv
-data/*_fileheader.csv
-data/npi_slim.parquet
-data/npi_address.parquet
-data/*.pdf
+investigations/medicaid-provider-spending/data/npidata_pfile_*.csv
+investigations/medicaid-provider-spending/data/endpoint_pfile_*.csv
+investigations/medicaid-provider-spending/data/othername_pfile_*.csv
+investigations/medicaid-provider-spending/data/pl_pfile_*.csv
+investigations/medicaid-provider-spending/data/*_fileheader.csv
+investigations/medicaid-provider-spending/data/npi_slim.parquet
+investigations/medicaid-provider-spending/data/npi_address.parquet
+investigations/medicaid-provider-spending/data/*.pdf
 # Raw HCPCS source files (from CMS ZIP)
-data/hcpcs/
-# OIG LEIE exclusion list (15MB, download from OIG website)
-medicaid-provider-spending/data/UPDATED.csv
+investigations/medicaid-provider-spending/data/hcpcs/
+# OIG LEIE exclusion list (15MB)
+investigations/medicaid-provider-spending/data/UPDATED.csv
 
 # ── Output (reproducible from scripts + data) ──
-output/
+investigations/*/output/

@@ -2,7 +2,7 @@ import polars as pl
 from pathlib import Path
 import sys
 
-OUTPUT_DIR = Path("output")
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 
 def check_ghost_providers():
     print("\n--- Check 1: Ghost Provider 'Kulmoris Joiner' ---")

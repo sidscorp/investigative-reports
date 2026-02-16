@@ -113,7 +113,7 @@ def analyze_parquet(file_path: str):
 
 if __name__ == "__main__":
     # Path to the parquet file
-    parquet_path = "./medicaid-provider-spending/data/medicaid-provider-spending.parquet"
+    parquet_path = str(Path(__file__).resolve().parent.parent / "data" / "medicaid-provider-spending.parquet")
 
     # Run analysis
     analyze_parquet(parquet_path)

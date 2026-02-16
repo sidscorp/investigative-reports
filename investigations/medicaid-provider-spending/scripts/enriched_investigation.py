@@ -36,10 +36,11 @@ def track(label: str, start_time: float, start_mem: float):
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-MEDICAID_PATH = "./medicaid-provider-spending/data/medicaid-provider-spending.parquet"
-NPI_CSV_PATH = "./data/npidata_pfile_20050523-20260208.csv"
-NPI_SLIM_PATH = "./data/npi_slim.parquet"
-HCPCS_PATH = "./data/hcpcs_codes.csv"
+INVESTIGATION_ROOT = Path(__file__).resolve().parent.parent
+MEDICAID_PATH = str(INVESTIGATION_ROOT / "data" / "medicaid-provider-spending.parquet")
+NPI_CSV_PATH = str(INVESTIGATION_ROOT / "data" / "npidata_pfile_20050523-20260208.csv")
+NPI_SLIM_PATH = str(INVESTIGATION_ROOT / "data" / "npi_slim.parquet")
+HCPCS_PATH = str(INVESTIGATION_ROOT / "data" / "hcpcs_codes.csv")
 
 # Columns to extract from the 330-column NPI CSV
 NPI_COLUMNS = [

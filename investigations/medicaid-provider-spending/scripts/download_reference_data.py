@@ -17,7 +17,9 @@ from datetime import datetime
 class DataDownloader:
     """Handles downloading and extracting CMS reference data."""
 
-    def __init__(self, data_dir: str = "./data"):
+    def __init__(self, data_dir: str = None):
+        if data_dir is None:
+            data_dir = str(Path(__file__).resolve().parent.parent / "data")
         self.data_dir = Path(data_dir)
         self.data_dir.mkdir(exist_ok=True)
         self.session = requests.Session()

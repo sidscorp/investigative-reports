@@ -11,18 +11,18 @@ import os
 import resource
 
 # ---------------------------------------------------------------------------
-# Paths (relative to project root)
+# Paths (relative to investigation root)
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+INVESTIGATION_ROOT = Path(__file__).resolve().parent.parent.parent
 
-MEDICAID_PATH = PROJECT_ROOT / "medicaid-provider-spending" / "data" / "medicaid-provider-spending.parquet"
-NPI_CSV_PATH = PROJECT_ROOT / "data" / "npidata_pfile_20050523-20260208.csv"
-NPI_SLIM_PATH = PROJECT_ROOT / "data" / "npi_slim.parquet"
-NPI_ADDRESS_PATH = PROJECT_ROOT / "data" / "npi_address.parquet"
-HCPCS_PATH = PROJECT_ROOT / "data" / "hcpcs_codes.csv"
-OIG_PATH = PROJECT_ROOT / "medicaid-provider-spending" / "data" / "UPDATED.csv"
-NUCC_PATH = PROJECT_ROOT / "medicaid-provider-spending" / "data" / "nucc_taxonomy_251.csv"
-OUTPUT_DIR = PROJECT_ROOT / "output"
+MEDICAID_PATH = INVESTIGATION_ROOT / "data" / "medicaid-provider-spending.parquet"
+NPI_CSV_PATH = INVESTIGATION_ROOT / "data" / "npidata_pfile_20050523-20260208.csv"
+NPI_SLIM_PATH = INVESTIGATION_ROOT / "data" / "npi_slim.parquet"
+NPI_ADDRESS_PATH = INVESTIGATION_ROOT / "data" / "npi_address.parquet"
+HCPCS_PATH = INVESTIGATION_ROOT / "data" / "hcpcs_codes.csv"
+OIG_PATH = INVESTIGATION_ROOT / "data" / "UPDATED.csv"
+NUCC_PATH = INVESTIGATION_ROOT / "data" / "nucc_taxonomy_251.csv"
+OUTPUT_DIR = INVESTIGATION_ROOT / "output"
 
 # Columns to extract from the 330-column NPI CSV for the slim parquet
 NPI_SLIM_COLUMNS = [
